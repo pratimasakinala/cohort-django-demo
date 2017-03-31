@@ -20,6 +20,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index),
-    url(r'^blog/', include('mysite.blog.urls')),
+    url(r'^writing/', include('mysite.blog.urls', namespace='blog')),
     url(r'^admin/', admin.site.urls),
 ]
